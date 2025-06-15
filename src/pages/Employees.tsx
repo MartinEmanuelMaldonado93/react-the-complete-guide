@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useEmployees } from '../hooks/useEmployees'
 import EmployeeCard from '../components/Employee/EmployeeCard'
 
-const Employees = () => {
+function Employees() {
   const { employees, deleteEmployee } = useEmployees()
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedDepartment, setSelectedDepartment] = useState('')

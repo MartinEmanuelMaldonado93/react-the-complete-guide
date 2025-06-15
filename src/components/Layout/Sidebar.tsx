@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
+import { cn } from '../../lib/utils'
 
 const navigation = [
   { name: 'Dashboard', href: '/', icon: '📊' },
@@ -6,7 +7,7 @@ const navigation = [
   { name: 'Add Employee', href: '/employees/add', icon: '➕' },
 ]
 
-const Sidebar = () => {
+function Sidebar() {
   const location = useLocation()
 
   return (
@@ -19,11 +20,12 @@ const Sidebar = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`${
+                className={cn(
+                  'group flex items-center px-3 py-2 text-sm font-medium border-l-4 transition-colors duration-200',
                   isActive
                     ? 'bg-primary-50 border-primary-500 text-primary-700'
                     : 'border-transparent text-gray-600 hover:bg-gray-50 hover:text-gray-900'
-                } group flex items-center px-3 py-2 text-sm font-medium border-l-4 transition-colors duration-200`}
+                )}
               >
                 <span className="mr-3 text-lg">{item.icon}</span>
                 {item.name}

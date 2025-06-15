@@ -2,11 +2,11 @@ import { ReactNode } from 'react'
 import Header from './Header'
 import Sidebar from './Sidebar'
 
-interface LayoutProps {
+type LayoutProps = {
   children: ReactNode
 }
 
-const Layout = ({ children }: LayoutProps) => {
+function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />

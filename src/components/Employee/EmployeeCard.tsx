@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 import { Employee } from '../../types/employee'
 
-interface EmployeeCardProps {
+type EmployeeCardProps = {
   employee: Employee
   onDelete: (id: string) => void
 }
 
-const EmployeeCard = ({ employee, onDelete }: EmployeeCardProps) => {
+function EmployeeCard({ employee, onDelete }: EmployeeCardProps) {
   const handleDelete = () => {
     onDelete(employee.id)
   }

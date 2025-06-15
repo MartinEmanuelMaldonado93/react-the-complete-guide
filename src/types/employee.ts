@@ -1,4 +1,4 @@
-export interface Employee {
+export type Employee = {
   id: string;
   name: string;
   email: string;
@@ -9,7 +9,7 @@ export interface Employee {
   avatar?: string;
 }
 
-export interface EmployeeFormData {
+export type EmployeeFormData = {
   name: string;
   email: string;
   position: string;

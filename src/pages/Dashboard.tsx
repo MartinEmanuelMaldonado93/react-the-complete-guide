@@ -1,6 +1,6 @@
 import { useEmployees } from '../hooks/useEmployees'
 
-const Dashboard = () => {
+function Dashboard() {
   const { employees } = useEmployees()
 
   const stats = [
