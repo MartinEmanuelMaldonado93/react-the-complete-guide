@@ -1,5 +1,7 @@
 # React - The Complete Guide
 
+![React Employee Management System Demo](./public/React---The-Complete-Guide.gif)
+
 A modern Employee Management System built with React, TypeScript, and Tailwind CSS. This application demonstrates best practices in React development including component composition, custom hooks, form validation, and responsive design.
 
 ## 🚀 Features
